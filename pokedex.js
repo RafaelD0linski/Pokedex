@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const POKEAPI_BASE_URL = 'https://pokeapi.co/api/v2/pokemon';
 
-    // Função para buscar detalhes de um Pokémon
     async function fetchPokemonDetails(url) {
         try {
             const response = await fetch(url);
@@ -20,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
             displayPokemonDetails(pokemonData);
         } catch (error) {
             console.error('Erro ao buscar detalhes do Pokémon:', error);
-            // Poderia exibir uma mensagem de erro para o usuário aqui
             pokemonNameElement.textContent = 'Error';
             pokemonImageElement.src = '';
             pokemonTypesElement.textContent = '';
@@ -30,19 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Função para exibir os detalhes do Pokémon na Pokedex
     function displayPokemonDetails(pokemon) {
         pokemonNameElement.textContent = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
-        pokemonImageElement.src = pokemon.sprites.front_default || ''; // Usa sprite padrão
+        pokemonImageElement.src = pokemon.sprites.front_default || ''; 
         pokemonImageElement.alt = pokemon.name;
         pokemonTypesElement.textContent = pokemon.types.map(typeInfo => typeInfo.type.name).join(', ');
-        pokemonHeightElement.textContent = (pokemon.height / 10).toFixed(1); // Altura em metros
-        pokemonWeightElement.textContent = (pokemon.weight / 10).toFixed(1); // Peso em kg
-        // Pega as duas primeiras habilidades
+        pokemonHeightElement.textContent = (pokemon.height / 10).toFixed(1); 
+        pokemonWeightElement.textContent = (pokemon.weight / 10).toFixed(1); 
         pokemonSkillsElement.textContent = pokemon.abilities.slice(0, 2).map(abilityInfo => abilityInfo.ability.name).join(', ');
     }
 
-    // Função para buscar a lista inicial de Pokémon
     async function fetchInitialPokemonList() {
         try {
             const response = await fetch(`${POKEAPI_BASE_URL}?limit=10`);
@@ -55,9 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const ul = document.createElement('ul');
             pokemonList.forEach(pokemon => {
                 const li = document.createElement('li');
-                const button = document.createElement('button'); // Usar botão para semântica e acessibilidade
+                const button = document.createElement('button'); 
                 button.textContent = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
-                button.dataset.url = pokemon.url; // Armazena a URL para buscar detalhes
+                button.dataset.url = pokemon.url; 
 
                 button.addEventListener('click', () => {
                     fetchPokemonDetails(button.dataset.url);
@@ -68,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             pokemonListElement.appendChild(ul);
 
-            // Opcional: Carregar detalhes do primeiro Pokémon da lista inicialmente
             if (pokemonList.length > 0) {
                 fetchPokemonDetails(pokemonList[0].url);
             }
@@ -79,6 +73,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Inicia o processo buscando a lista
     fetchInitialPokemonList();
 }); 

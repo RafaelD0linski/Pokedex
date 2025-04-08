@@ -21,10 +21,6 @@ div#right
     position: relative;
 }
 
-
-
-/* //// LEFT PART //// */
-
 div#curve1_left
 {
     width: 201px;
@@ -644,9 +640,6 @@ div#midCircle
 } 
 
 
-
-/* //// RIGHT PART //// */
-
 div#curve1_right
 {
     width: 166px;
@@ -928,52 +921,50 @@ div#yellowBox2
     -o-box-shadow: 0 0 20px #ff6600 inset;
 }
 
-/* Estilos para a lista de Pokémon */
+
 #pokemonList {
-  padding: 10px; /* Adiciona um pouco de espaço interno */
-  max-height: 150px; /* Define uma altura máxima para a lista */
-  overflow-y: auto; /* Adiciona rolagem vertical se a lista for muito longa */
-  border: 1px solid #dedede; /* Adiciona uma borda sutil */
-  margin-bottom: 15px; /* Adiciona espaço abaixo da lista */
-  background-color: #fdd; /* Fundo vermelho claro */
-  border-radius: 5px; /* Cantos arredondados */
+  padding: 10px; 
+  max-height: 150px; 
+  overflow-y: auto; 
+  border: 1px solid #dedede; 
+  margin-bottom: 15px; 
+  background-color: #fdd; 
+  border-radius: 5px; 
 }
 
 #pokemonList ul {
-  list-style: none; /* Remove os marcadores da lista (bolinhas) */
+  list-style: none; 
   padding: 0;
   margin: 0;
-  display: flex; /* Organiza os itens em linha */
-  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se não houver espaço */
-  gap: 5px; /* Adiciona um pequeno espaço entre os botões */
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 5px;
 }
 
 #pokemonList li {
-  /* Não precisamos de estilo específico para o li com flexbox no ul */
 }
 
 #pokemonList button {
   padding: 5px 10px;
-  background-color: #fffacd; /* Botões amarelos (Lemon Chiffon) */
+  background-color: #fffacd; 
   border: 1px solid #ddd;
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.9em;
-  transition: background-color 0.2s ease; /* Transição suave ao passar o mouse */
+  transition: background-color 0.2s ease; 
 }
 
 #pokemonList button:hover {
-  background-color: #fafad2; /* Amarelo mais escuro no hover (Light Goldenrod Yellow) */
+  background-color: #fafad2;
 }
 
 #pokemonList button:focus {
-    outline: 2px solid #4a90e2; /* Adiciona um destaque de foco para acessibilidade */
+    outline: 2px solid #4a90e2; 
     outline-offset: 2px;
 }
 
-/* Ajuste opcional para o contêiner de estatísticas para garantir espaço */
 #stats {
-    padding-top: 10px; /* Garante espaço acima das stats */
+    padding-top: 10px; 
 }
 
 @media handheld and (orientation:portrait), (max-width:768px) {
