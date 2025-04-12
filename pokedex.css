@@ -1,31 +1,34 @@
+/* Estilo principal da Pokedex */
 div#pokedex
 {
-    width: 750px;
-    margin: 50px auto 0 auto;
+    width: 750px; /* Largura total da Pokedex */
+    margin: 50px auto 0 auto; /* Centraliza a Pokedex na página */
 }
 
+/* Lado esquerdo da Pokedex */
 div#left
 {
-    width: 400px;
-    height: 500px;
-    float: left;
-    position: relative;
-    z-index: 1;
+    width: 400px; /* Largura do lado esquerdo */
+    height: 500px; /* Altura do lado esquerdo */
+    float: left; /* Posiciona à esquerda */
+    position: relative; /* Permite posicionamento absoluto dos elementos internos */
+    z-index: 1; /* Define a ordem de empilhamento */
 }
 
+/* Lado direito da Pokedex */
 div#right
 {
-    width: 350px;
-    height: 500px;
-    float: left;
-    position: relative;
+    width: 350px; /* Largura do lado direito */
+    height: 500px; /* Altura do lado direito */
+    float: left; /* Posiciona à esquerda (ao lado do lado esquerdo) */
+    position: relative; /* Permite posicionamento absoluto dos elementos internos */
 }
 
 div#curve1_left
 {
     width: 201px;
     height: 85px;
-    background-color: #8b0000;
+    background-color: #8b0000; /* Vermelho escuro */
     float: left;
     padding: 15px 0 0 15px;
 
@@ -33,17 +36,17 @@ div#curve1_left
     top: 0;
     left: 0;
 
-    box-shadow: -10px 9px #5e0000;
+    box-shadow: -10px 9px #5e0000; /* Sombra para dar profundidade */
     -webkit-box-shadow: -10px 9px #5e0000;
     -moz-box-shadow: -10px 9px #5e0000;
     -o-box-shadow: -10px 9px #5e0000;
 
-    border-bottom-right-radius: 85px 60px;
+    border-bottom-right-radius: 85px 60px; /* Curva na parte inferior direita */
     -webkit-border-bottom-right-radius: 85px 60px;
     -moz-border-bottom-right-radius: 85px 60px;
     -o-border-bottom-right-radius: 85px 60px;
 
-    border-top-left-radius: 30px;
+    border-top-left-radius: 30px; /* Curva na parte superior esquerda */
     -webkit-border-top-left-radius: 30px;
     -moz-border-top-left-radius: 30px;
     -o-border-top-left-radius: 30px;
@@ -54,9 +57,9 @@ div#bg_curve1_left
 {
     width: 400px;
     height: 80px;
-    background-color: #8b0000;
+    background-color: #8b0000; /* Vermelho escuro */
 
-    border-top-left-radius: 30px;
+    border-top-left-radius: 30px; /* Curva na parte superior esquerda */
     -webkit-border-top-left-radius: 30px;
     -moz-border-top-left-radius: 30px;
     -o-border-top-left-radius: 30px;
@@ -66,14 +69,14 @@ div#curve2_left
 {
     width: 216px;
     height: 451px;
-    background-color: #c00d0d;
+    background-color: #c00d0d; /* Vermelho mais claro */
     float: right;
 
     position: absolute;
     bottom: 0;
     right: 0;
 
-    border-top-left-radius:85px 60px;
+    border-top-left-radius:85px 60px; /* Curva na parte superior esquerda */
     -webkit-border-top-left-radius: 85px 60px;
     -moz-border-top-left-radius: 85px 60px;
     -o-border-top-left-radius: 85px 60px;
@@ -83,14 +86,14 @@ div#bg_curve2_left
 {
     width: 400px;
     height: 420px;
-    background-color: #c00d0d;
+    background-color: #c00d0d; /* Vermelho mais claro */
 
-    box-shadow: -10px 9px #5e0000;
+    box-shadow: -10px 9px #5e0000; /* Sombra para dar profundidade */
     -webkit-box-shadow: -10px 9px #5e0000;
     -moz-box-shadow: -10px 9px #5e0000;
     -o-box-shadow: -10px 9px #5e0000;
 
-    border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 30px; /* Curva na parte inferior esquerda */
     -webkit-border-bottom-left-radius: 30px;
     -moz-border-bottom-left-radius: 30px;
     -o-border-bottom-left-radius: 30px;
@@ -101,20 +104,20 @@ div#buttonGlass
     width: 60px;
     height: 60px;
     margin-right: 15px;
-    border: 5px solid #fff;
+    border: 5px solid #fff; /* Borda branca */
     float: left;
 
-    box-shadow: 0 0 10px #490000;
+    box-shadow: 0 0 10px #490000; /* Sombra vermelha */
     -webkit-box-shadow: 0 0 10px #490000;
     -moz-box-shadow: 0 0 10px #490000;
     -o-box-shadow: 0 0 10px #490000;
     
-    background: radial-gradient(#05fbfb, #29abe3);
+    background: radial-gradient(#05fbfb, #29abe3); /* Gradiente azul */
     background: -webkit-radial-gradient(#05fbfb, #29abe3);
     background: -moz-radial-gradient(#05fbfb, #29abe3);
     background: -o-radial-gradient(#05fbfb, #29abe3);
     
-    border-radius: 35px;
+    border-radius: 35px; /* Formato circular */
     -webkit-border-radius: 35px;
     -moz-border-radius: 35px;
        -o-border-radius: 35px;
@@ -125,10 +128,10 @@ div#reflect
     width: 30px;
     height: 18px;
     margin: 3px 0 0 15px;
-    background: #fff;
-    opacity: 0.6;
+    background: #fff; /* Branco */
+    opacity: 0.6; /* Transparência */
 
-    border-radius: 15px 9px;
+    border-radius: 15px 9px; /* Curva suave */
     -webkit-border-radius: 15px 9px;
     -moz-border-radius: 15px 9px;
        -o-border-radius: 15px 9px;
@@ -142,17 +145,17 @@ div#miniButtonGlass1
     margin-right: 10px;
     float: left;
 
-    box-shadow: 0 0 10px #490000;
+    box-shadow: 0 0 10px #490000; /* Sombra vermelha */
     -webkit-box-shadow: 0 0 10px #490000;
     -moz-box-shadow: 0 0 10px #490000;
     -o-box-shadow: 0 0 10px #490000;
 
-    border-radius: 20px;
+    border-radius: 20px; /* Formato circular */
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -o-border-radius: 20px;
     
-    background: radial-gradient(#fb7b7b, #fb0505);
+    background: radial-gradient(#fb7b7b, #fb0505); /* Gradiente vermelho */
     background: -webkit-radial-gradient(#fb7b7b, #fb0505);
     background: -moz-radial-gradient(#fb7b7b, #fb0505);
     background: -o-radial-gradient(#fb7b7b, #fb0505);
@@ -165,17 +168,17 @@ div#miniButtonGlass2
     margin-right: 10px;
     float: left;
 
-    box-shadow: 0 0 10px #490000;
+    box-shadow: 0 0 10px #490000; /* Sombra vermelha */
     -webkit-box-shadow: 0 0 10px #490000;
     -moz-box-shadow: 0 0 10px #490000;
     -o-box-shadow: 0 0 10px #490000;
 
-    border-radius: 20px;
+    border-radius: 20px; /* Formato circular */
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -o-border-radius: 20px;
     
-    background: radial-gradient(#fbfb9b, #fbfb05);
+    background: radial-gradient(#fbfb9b, #fbfb05); /* Gradiente amarelo */
     background: -webkit-radial-gradient(#fbfb9b, #fbfb05);
     background: -moz-radial-gradient(#fbfb9b, #fbfb05);
     background: -o-radial-gradient(#fbfb9b, #fbfb05);
@@ -188,17 +191,17 @@ div#miniButtonGlass3
     margin-right: 10px;
     float: left;
 
-    box-shadow: 0 0 10px #490000;
+    box-shadow: 0 0 10px #490000; /* Sombra vermelha */
     -webkit-box-shadow: 0 0 10px #490000;
     -moz-box-shadow: 0 0 10px #490000;
     -o-box-shadow: 0 0 10px #490000;
 
-    border-radius: 20px;
+    border-radius: 20px; /* Formato circular */
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -o-border-radius: 20px;
     
-    background: radial-gradient(#b0fb7b, #50fb05);
+    background: radial-gradient(#b0fb7b, #50fb05); /* Gradiente verde */
     background: -webkit-radial-gradient(#b0fb7b, #50fb05);
     background: -moz-radial-gradient(#b0fb7b, #50fb05);
     background: -o-radial-gradient(#b0fb7b, #50fb05);
@@ -219,23 +222,23 @@ div#junction
 div#junction1
 {
     height: 40px;
-    background-color: #5e0000;
-    opacity: 0.3;
+    background-color: #5e0000; /* Vermelho escuro */
+    opacity: 0.3; /* Transparência */
     margin-top: 50px;
     margin-bottom: 262px;
 
-    border-top: 2px solid #330000;
-    border-bottom: 2px solid #330000;
+    border-top: 2px solid #330000; /* Borda superior */
+    border-bottom: 2px solid #330000; /* Borda inferior */
 }
 
 div#junction2
 {
     height: 40px;
-    background-color: #5e0000;
-    opacity: 0.3;
+    background-color: #5e0000; /* Vermelho escuro */
+    opacity: 0.3; /* Transparência */
 
-    border-top: 2px solid #330000;
-    border-bottom: 2px solid #330000;
+    border-top: 2px solid #330000; /* Borda superior */
+    border-bottom: 2px solid #330000; /* Borda inferior */
 }
 
 div#screen
@@ -243,14 +246,14 @@ div#screen
     height: 245px;
     width: 260px;
     padding: 0 20px;
-    background-color: #b0b0b0;
+    background-color: #b0b0b0; /* Cinza */
     float:left;
 
     position: absolute;
     top: 130px;
     left: 19px;
 
-    border-radius: 15px;
+    border-radius: 15px; /* Cantos arredondados */
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -o-border-radius: 15px;
@@ -274,11 +277,11 @@ div#picture
     width: 254px;
     margin-top: 20px;
     margin-bottom: 9px;
-    background-color: #fff;
-    border: 3px solid #494949;
+    background-color: #fff; /* Branco */
+    border: 3px solid #494949; /* Borda cinza */
     clear: both;
 
-    border-radius: 15px;
+    border-radius: 15px; /* Cantos arredondados */
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -o-border-radius: 15px;
@@ -288,7 +291,7 @@ div#picture img
 {
     display: block;
     margin: 0 auto;
-    cursor: pointer;
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
 }
 
 div#topPicture
@@ -301,11 +304,11 @@ div#buttontopPicture1, div#buttontopPicture2
 {
     height: 8px;
     width: 8px;
-    background-color: #c00d0d;
-    border: 1px solid #000;
+    background-color: #c00d0d; /* Vermelho */
+    border: 1px solid #000; /* Borda preta */
     float: left;
 
-    border-radius: 15px;
+    border-radius: 15px; /* Formato circular */
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -o-border-radius: 15px;
@@ -320,16 +323,16 @@ div#buttonbottomPicture
 {
     height: 26px;
     width: 26px;
-    background-color: #c00d0d;
+    background-color: #c00d0d; /* Vermelho */
     margin-left: 35px;
     float: left;
 
-    border-radius: 30px;
+    border-radius: 30px; /* Formato circular */
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -o-border-radius: 30px;
 
-    box-shadow: -2px 1px #5e0000;
+    box-shadow: -2px 1px #5e0000; /* Sombra */
     -webkit-box-shadow: -2px 1px #5e0000;
     -moz-box-shadow: -2px 1px #5e0000;
     -o-box-shadow: -2px 1px #5e0000;
@@ -352,9 +355,9 @@ div.sp
 {
     height: 3px;
     margin-bottom: 5px;
-    background-color: #494949;
+    background-color: #494949; /* Cinza */
 
-    border-radius: 30px;
+    border-radius: 30px; /* Cantos arredondados */
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -o-border-radius: 30px;
@@ -370,7 +373,7 @@ div#bigbluebutton
     top: 395px;
     left: 30px;
 
-    border-radius: 100px;
+    border-radius: 100px; /* Formato circular */
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     -o-border-radius: 100px;
@@ -380,7 +383,7 @@ div#bigbluebutton
     background: -moz-linear-gradient(top, #307bfb 0%, #0530e5 80%);
     background: -o-linear-gradient(top, #307bfb 0%, #0530e5 80%);
 
-    box-shadow: -3px 2px #001c91;
+    box-shadow: -3px 2px #001c91; /* Sombra azul */
     -webkit-box-shadow: -3px 2px #001c91;
     -moz-box-shadow: -3px 2px #001c91;
     -o-box-shadow: -3px 2px #001c91;
@@ -395,7 +398,7 @@ div#barbutton1
     top: 405px;
     left: 100px;
 
-    border-radius: 100px;
+    border-radius: 100px; /* Formato circular */
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     -o-border-radius: 100px;
@@ -405,7 +408,7 @@ div#barbutton1
     background: -moz-linear-gradient(top, #50fb05 0%, #057b05 100%);
     background: -o-linear-gradient(top, #50fb05 0%, #057b05 100%);
 
-    box-shadow: -1px 2px #004200;
+    box-shadow: -1px 2px #004200; /* Sombra verde */
     -webkit-box-shadow: -1px 2px #004200;
     -moz-box-shadow: -1px 2px #004200;
     -o-box-shadow: -1px 2px #004200;
@@ -420,7 +423,7 @@ div#barbutton2
     top: 405px;
     left: 165px;
 
-    border-radius: 100px;
+    border-radius: 100px; /* Formato circular */
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     -o-border-radius: 100px;
@@ -430,7 +433,7 @@ div#barbutton2
     background: -moz-linear-gradient(top, #fb6505 0%, #bb0505 100%);
     background: -o-linear-gradient(top, #fb6505 0%, #bb0505 100%);
 
-    box-shadow: -1px 2px #7b0000;
+    box-shadow: -1px 2px #7b0000; /* Sombra vermelha */
     -webkit-box-shadow: -1px 2px #7b0000;
     -moz-box-shadow: -1px 2px #7b0000;
     -o-box-shadow: -1px 2px #7b0000;
@@ -450,23 +453,23 @@ div#topcross
 {
     width: 30px;
     height: 30px;
-    background-color: #222;
+    background-color: #222; /* Cinza escuro */
 
     position: absolute;
     top: 0;
     left: 30px;
 
-    box-shadow: -3px 2px #010101;
+    box-shadow: -3px 2px #010101; /* Sombra */
     -webkit-box-shadow: -3px 2px #010101;
     -moz-box-shadow: -3px 2px #010101;
     -o-box-shadow: -3px 2px #010101;
 
-    border-top-left-radius: 5px;
+    border-top-left-radius: 5px; /* Cantos arredondados */
     -webkit-border-top-left-radius: 5px;
     -moz-border-top-left-radius: 5px;
     -o-border-top-left-radius: 5px;
 
-    border-top-right-radius: 5px;
+    border-top-right-radius: 5px; /* Cantos arredondados */
     -webkit-border-top-right-radius: 5px;
     -moz-border-top-right-radius: 5px;
     -o-border-top-right-radius: 5px;
@@ -476,24 +479,24 @@ div#leftcross
 {
     width: 30px;
     height: 30px;
-    background-color: #222;
+    background-color: #222; /* Cinza escuro */
     z-index: 1;
 
     position: absolute;
     left: 0;
     top: 30px;
 
-    box-shadow: -3px 2px #010101;
+    box-shadow: -3px 2px #010101; /* Sombra */
     -webkit-box-shadow: -3px 2px #010101;
     -moz-box-shadow: -3px 2px #010101;
     -o-box-shadow: -3px 2px #010101;
 
-    border-top-left-radius: 5px;
+    border-top-left-radius: 5px; /* Cantos arredondados */
     -webkit-border-top-left-radius: 5px;
     -moz-border-top-left-radius: 5px;
     -o-border-top-left-radius: 5px;
 
-    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px; /* Cantos arredondados */
     -webkit-border-bottom-left-radius: 5px;
     -moz-border-bottom-left-radius: 5px;
     -o-border-bottom-left-radius: 5px;
@@ -503,13 +506,13 @@ div#midcross
 {
     width: 30px;
     height: 30px;
-    background-color: #222;
+    background-color: #222; /* Cinza escuro */
 
     position: absolute;
     top: 30px;
     left: 30px;
 
-    box-shadow: -3px 2px #010101;
+    box-shadow: -3px 2px #010101; /* Sombra */
     -webkit-box-shadow: -3px 2px #010101;
     -moz-box-shadow: -3px 2px #010101;
     -o-box-shadow: -3px 2px #010101;
@@ -519,23 +522,23 @@ div#rightcross
 {
     width: 30px;
     height: 30px;
-    background-color: #222;
+    background-color: #222; /* Cinza escuro */
 
     position: absolute;
     top: 30px;
     right: 0;
 
-    box-shadow: -3px 2px #010101;
+    box-shadow: -3px 2px #010101; /* Sombra */
     -webkit-box-shadow: -3px 2px #010101;
     -moz-box-shadow: -3px 2px #010101;
     -o-box-shadow: -3px 2px #010101;
 
-    border-top-right-radius: 5px;
+    border-top-right-radius: 5px; /* Cantos arredondados */
     -webkit-border-top-right-radius: 5px;
     -moz-border-top-right-radius: 5px;
     -o-border-top-right-radius: 5px;
 
-    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px; /* Cantos arredondados */
     -webkit-border-bottom-right-radius: 5px;
     -moz-border-bottom-right-radius: 5px;
     -o-border-bottom-right-radius: 5px;
@@ -545,23 +548,23 @@ div#botcross
 {
     width: 30px;
     height: 30px;
-    background-color: #222;
+    background-color: #222; /* Cinza escuro */
 
     position: absolute;
     bottom: 0;
     left: 30px;
 
-    box-shadow: -3px 2px #010101;
+    box-shadow: -3px 2px #010101; /* Sombra */
     -webkit-box-shadow: -3px 2px #010101;
     -moz-box-shadow: -3px 2px #010101;
     -o-box-shadow: -3px 2px #010101;
 
-    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px; /* Cantos arredondados */
     -webkit-border-bottom-left-radius: 5px;
     -moz-border-bottom-left-radius: 5px;
     -o-border-bottom-left-radius: 5px;
 
-    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px; /* Cantos arredondados */
     -webkit-border-bottom-right-radius: 5px;
     -moz-border-bottom-right-radius: 5px;
     -o-border-bottom-right-radius: 5px;
@@ -628,12 +631,12 @@ div#midCircle
     top: 5px;
     left: 4px;
 
-    border-radius: 30px;
+    border-radius: 30px; /* Formato circular */
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -o-border-radius: 30px;
 
-    background: radial-gradient(#111, #222);
+    background: radial-gradient(#111, #222); /* Gradiente escuro */
     background: -webkit-radial-gradient(#111, #222);
     background: -moz-radial-gradient(#111, #222);
     background: -o-radial-gradient(#111, #222);
@@ -921,48 +924,93 @@ div#yellowBox2
     -o-box-shadow: 0 0 20px #ff6600 inset;
 }
 
-
+/* Lista de Pokémons - Agora posicionada no rodapé */
 #pokemonList {
   padding: 10px; 
   max-height: 150px; 
   overflow-y: auto; 
   border: 1px solid #dedede; 
-  margin-bottom: 15px; 
-  background-color: #fdd; 
+  margin: 20px auto;
+  background-color: #c00d0d; /* Cor vermelha que combina com o fundo */
   border-radius: 5px; 
+  position: absolute;
+  bottom: 40px; /* Movido mais para baixo */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  text-align: center;
 }
 
+/* Container da lista de Pokémons */
 #pokemonList ul {
   list-style: none; 
   padding: 0;
   margin: 0;
   display: flex; 
   flex-wrap: wrap; 
-  gap: 5px;
+  gap: 10px;
+  justify-content: center;
 }
 
+/* Item individual da lista */
 #pokemonList li {
+  width: 80px;
+  height: 80px;
 }
 
+/* Botão que contém a imagem do Pokémon */
 #pokemonList button {
-  padding: 5px 10px;
-  background-color: #fffacd; 
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: none;
+  border: none;
   cursor: pointer;
-  font-size: 0.9em;
-  transition: background-color 0.2s ease; 
+  transition: transform 0.2s ease;
 }
 
+/* Efeito ao passar o mouse sobre o Pokémon */
 #pokemonList button:hover {
-  background-color: #fafad2;
+  transform: scale(1.1);
 }
 
+/* Estilo da imagem do Pokémon */
+#pokemonList button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Foco do botão */
 #pokemonList button:focus {
-    outline: 2px solid #4a90e2; 
-    outline-offset: 2px;
+  outline: 2px solid #4a90e2; 
+  outline-offset: 2px;
 }
 
+/* Localização dos botões na Pokedex */
+/* 
+  Botões do lado esquerdo superior:
+  - buttonGlass (botão azul grande)
+  - miniButtonGlass1 (vermelho)
+  - miniButtonGlass2 (amarelo)
+  - miniButtonGlass3 (verde)
+  
+  Botões do lado esquerdo inferior:
+  - bigbluebutton (botão azul grande)
+  - barbutton1 (barra verde)
+  - barbutton2 (barra vermelha)
+  - cross (d-pad direcional)
+  
+  Botões do lado direito:
+  - blueButtons1 (fileira superior de botões azuis)
+  - blueButtons2 (fileira inferior de botões azuis)
+  - barbutton3 (barra verde)
+  - barbutton4 (barra vermelha)
+  - miniButtonGlass4 (laranja)
+  - miniButtonGlass5 (verde)
+*/
+
+/* Estilo da tela de estatísticas */
 #stats {
     padding-top: 10px; 
 }

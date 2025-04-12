@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Configurações básicas da página -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pokédex</title>
+  <!-- Links para os arquivos de estilo -->
   <link rel="stylesheet" href="pokedex.css" />
   <link rel="stylesheet" href="style.css">
   <style>
@@ -13,11 +15,16 @@
   </style>
 </head>
 <body>
+  <!-- Container principal da Pokedex -->
   <div id="pokedex">
+    <!-- Lado esquerdo da Pokedex -->
     <div id="left">
+      <!-- Logo e elementos decorativos -->
       <div id="logo"></div>
       <div id="bg_curve1_left"></div>
       <div id="bg_curve2_left"></div>
+      
+      <!-- Botões superiores do lado esquerdo -->
       <div id="curve1_left">
         <div id="buttonGlass">
           <div id="reflect"></div>
@@ -26,19 +33,23 @@
         <div id="miniButtonGlass2"></div>
         <div id="miniButtonGlass3"></div>
       </div>
+      
+      <!-- Curva decorativa do lado esquerdo -->
       <div id="curve2_left">
         <div id="junction">
           <div id="junction1"></div>
           <div id="junction2"></div>
         </div>
       </div>
+      
+      <!-- Tela principal onde a imagem do Pokémon é exibida -->
       <div id="screen">
         <div id="topPicture">
           <div id="buttontopPicture1"></div>
           <div id="buttontopPicture2"></div>
         </div>
         <div id="picture">
-          <img id="pokemonImage" title="Click e altere imagem" height="170" />
+          <img id="pokemonImage" title="Clique para alterar a imagem" height="170" />
         </div>
         <div id="buttonbottomPicture"></div>
         <div id="speakers">
@@ -48,6 +59,8 @@
           <div class="sp"></div>
         </div>
       </div>
+      
+      <!-- Botões inferiores do lado esquerdo -->
       <div id="bigbluebutton"></div>
       <div id="barbutton1"></div>
       <div id="barbutton2"></div>
@@ -69,16 +82,23 @@
         </div>
       </div>
     </div>
+    
+    <!-- Lado direito da Pokedex -->
     <div id="right">
+      <!-- Lista de Pokémons que será preenchida dinamicamente -->
       <div id="pokemonList">
       </div>
+      
+      <!-- Área de estatísticas do Pokémon -->
       <div id="stats">
-        <strong>Name:</strong> <span id="pokemonName"></span><br />
-        <strong>Type:</strong> <span id="pokemonTypes"></span><br />
-        <strong>Height:</strong> <span id="pokemonHeight"></span>m<br />
-        <strong>Weight:</strong> <span id="pokemonWeight"></span>kg<br />
-        <strong>Skill:</strong> <span id="pokemonSkills"></span>...
+        <strong>Nome:</strong> <span id="pokemonName"></span><br />
+        <strong>Tipo:</strong> <span id="pokemonTypes"></span><br />
+        <strong>Altura:</strong> <span id="pokemonHeight"></span>m<br />
+        <strong>Peso:</strong> <span id="pokemonWeight"></span>kg<br />
+        <strong>Habilidades:</strong> <span id="pokemonSkills"></span>...
       </div>
+      
+      <!-- Botões azuis do lado direito -->
       <div id="blueButtons1">
         <div class="blueButton"></div>
         <div class="blueButton"></div>
@@ -86,6 +106,8 @@
       </div>
     </div>
   </div>
+  
+  <!-- Script que controla a funcionalidade da Pokedex -->
   <script src="pokedex.js"></script>
 </body>
 </html>
