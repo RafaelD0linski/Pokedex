@@ -117,3 +117,49 @@ document.addEventListener('DOMContentLoaded', () => {    // -> Esse evento esper
 //Dentro do arquivo pokedex.js, as chamadas para a API são feitas com a função fetch(), que é usada para buscar dados da PokéAPI (https://pokeapi.co/api/v2/pokemon).
 
 // Essas chamadas estão localizadas principalmente em duas partes do código:
+
+
+// “A chamada à API é feita no arquivo pokedex.js, nas funções fetchInitialPokemonList() e fetchPokemonDetails(url). Elas usam fetch() para buscar dados da PokéAPI. A primeira busca a lista de Pokémons e a segunda busca os detalhes de cada Pokémon ao clicar.”
+
+// Se ele quiser saber "quem inicia tudo isso", aí você complementa:
+
+// “Essas funções são chamadas dentro do evento DOMContentLoaded, que garante que o HTML esteja todo carregado antes de executar o script.”
+
+
+// Boa! Se seu professor perguntar "qual parte do código é responsável pela aparência/estilização (CSS) da sua Pokédex?", você pode responder algo assim:
+
+// 📌 Resposta explicando o CSS:
+// “A estilização da Pokédex é feita por três partes principais no HTML:”
+
+// Dois arquivos CSS externos:
+
+// html
+// Copiar
+// Editar
+// <link rel="stylesheet" href="pokedex.css" />
+// <link rel="stylesheet" href="style.css">
+// O pokedex.css provavelmente cuida do estilo visual da estrutura principal da Pokédex, simulando o visual do dispositivo original.
+
+// O style.css pode conter estilos adicionais ou ajustes gerais, como fontes, espaçamentos, posicionamentos, etc.
+
+// Um estilo interno (no próprio HTML):
+
+// html
+// Copiar
+// Editar
+// <style>
+//   body {
+//     background-color: red;
+//   }
+// </style>
+// Esse estilo interno define o fundo da página como vermelho.
+
+// IDs e classes no HTML:
+
+// O HTML tem várias divs com id e class (ex: #screen, #buttonGlass, .sp, etc).
+
+// Esses seletores são utilizados nos arquivos CSS para aplicar os estilos corretos em cada parte da Pokédex.
+
+// 📦 Resumo direto:
+// "A aparência da Pokédex é controlada pelos arquivos pokedex.css e style.css, que são importados no <head>. Também há um estilo interno que muda a cor de fundo do site. As divs com id e class no HTML servem como alvos para aplicar esses estilos."
+
